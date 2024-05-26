@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sheyan's Web Page</title>
+    <title>Sheyan - DevOps Engineer</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #121212;
+            color: #e0e0e0;
         }
 
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: #1f1f1f;
+            color: #e0e0e0;
             padding: 1rem 0;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
         nav ul li {
@@ -30,56 +33,107 @@
         }
 
         nav ul li a {
-            color: #fff;
+            color: #e0e0e0;
             text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
         }
 
         main {
             padding: 20px;
-            background-color: #fff;
+            background-color: #1e1e1e;
             margin: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
-        h1 {
-            color: #333;
+        section {
+            margin-bottom: 20px;
         }
 
-        p {
-            line-height: 1.6;
+        h1, h2 {
+            color: #ffffff;
+        }
+
+        p, ul {
+            color: #b0b0b0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
         }
 
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #1f1f1f;
+            color: #e0e0e0;
             text-align: center;
             padding: 1rem 0;
             position: fixed;
             width: 100%;
             bottom: 0;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            color: #80cbc4;
+        }
+        
+        a:hover {
+            color: #4db6ac;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Sheyan's Web Page</h1>
+        <h1>Sheyan - DevOps Engineer</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>About Sheyan</h1>
-        <p>Hi, my name is Sheyan. Welcome to my personal web page. Here you can find information about me, my interests, and how to contact me.</p>
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>Welcome to my personal web page. I'm Sheyan, a DevOps Engineer with a passion for automation, continuous integration, and continuous deployment.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Sheyan. With a strong background in software development and IT operations, I specialize in bridging the gap between development and operations. My goal is to streamline and automate workflows to improve efficiency and reliability.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Continuous Integration/Continuous Deployment (CI/CD)</li>
+                <li>Infrastructure as Code (IaC)</li>
+                <li>Containerization with Docker and Kubernetes</li>
+                <li>Cloud Services (AWS, Azure, GCP)</li>
+                <li>Monitoring and Logging</li>
+                <li>Version Control with Git</li>
+                <li>Scripting with Bash, Python</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at <a href="mailto:sheyan@example.com">sheyan@example.com</a>.</p>
+        </section>
     </main>
 
     <footer>
-        &copy; 2024 Sheyan's Web Page. All rights reserved.
+        &copy; 2024 Sheyan. All rights reserved.
     </footer>
 </body>
 </html>
